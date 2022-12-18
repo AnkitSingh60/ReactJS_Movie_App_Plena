@@ -2,7 +2,7 @@ import React from "react";
 
 const Card = (movie) => {
     let {info} = movie;
-    console.log('info:', info)
+    // console.log('info:', info)
     let img_url = "https://image.tmdb.org/t/p/w500";
   return (
     <>
