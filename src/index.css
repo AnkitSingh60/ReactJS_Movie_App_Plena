@@ -1,13 +1,83 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+:root{
+  --primary-color: #192026;
+  --secondary-color: #374151;
+}
+
+body{
+  background-color: var(--primary-color);
+}
+
+.navbar{
+  background-color: var(--secondary-color);
+  height: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+nav ul{
+  display: flex;
+}
+
+nav ul li{
+  list-style: none;
+  margin-right: 1rem;
+}
+
+nav ul li a{
+  text-decoration: none;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 0.2rem 0.6rem;
+  position: relative;
+}
+
+nav ul li a::before{
+  content: "";
+  position: absolute;
+  top:-10px;
+  left:50%;
+  height: 3px;
+  width:0;
+  transform: translateX(-50%);
+  background-color: var(--primary-color);
+  transition: all 0.3s ease-in-out;
+}
+nav ul li a:hover:before{
+  width:100%;
+}
+nav ul li a:focus{
+  background-color: var(--primary-color);
+  opacity: 0.2px;
+  border-radius: 20px;
+}
+nav ul li a:focus::before{
+  width: 0%;
+}
+
+.search{
+  display: flex;
+}
+
+.search_input{
+  outline: none;
+  border: 1px solid var(--primary-color);
+  border-radius: 2rem;
+  padding: 0.3rem 1rem;
+  font-size: 1rem;
+  color: white;
+  background-color: var(--primary-color);
+  box-shadow: inset 0 5px 10px var(--secondary-color);
+  text-align: center;
 }

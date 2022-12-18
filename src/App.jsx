@@ -1,10 +1,12 @@
 import './App.css';
+import Home from './components/Home';
+
 
 function App() {
   return (
-    <div className="App">
-      <h1>hey kiddo</h1>
-    </div>
+    <>
+    <Home />
+    </>
   );
 }
 
