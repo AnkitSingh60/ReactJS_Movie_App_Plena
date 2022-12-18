@@ -100,7 +100,7 @@ nav ul li a:focus::before {
 }
 
 .movie {
-  /* border: 1px solid red;  */
+
   width: 250px;
   background-color: var(--secondary-color);
   margin: 1rem;
@@ -134,6 +134,22 @@ nav ul li a:focus::before {
   color: white;
 }
 
+.notFound{
+  font-size: 50px;
+  color: white;
+}
+.ptrs {
+  border: 1px solid var(--primary-color);
+  border-radius: 2rem;
+  padding: 0.3rem 1rem;
+  font-size: 1rem;
+  color: white;
+  background-color: var(--primary-color);
+  box-shadow: inset 0 5px 10px var(--secondary-color);
+  text-align: center;
+  margin-right: 10px;
+}
+
 .overview {
   text-align: center;
   font-size: larger;
@@ -151,12 +167,21 @@ nav ul li a:focus::before {
   nav ul li {
     position: relative;
     bottom: 35px;
-    left: 125px;
+    left: 159px;
     text-align: center;
+  }
+  nav ul li a{
+    font-size: 15px;
   }
   .search {
     position: relative;
     top: 20px;
     right: 210px;
+    height: 30px;
+  }
+  .ptrs{
+    width: 90px;
+    font-size: 10px;
+
   }
 }
