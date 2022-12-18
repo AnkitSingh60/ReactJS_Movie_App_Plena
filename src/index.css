@@ -176,7 +176,7 @@ nav ul li a:focus::before {
   .search {
     position: relative;
     top: 20px;
-    right: 210px;
+    right: 170px;
     height: 30px;
   }
   .ptrs{
