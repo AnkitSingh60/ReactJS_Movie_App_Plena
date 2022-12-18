@@ -33,6 +33,10 @@ const Home = () => {
 
   };
 
+  const logout = () => {
+    localStorage.clear()
+  }
+
   const searchMovie = (event) => {
     if(event.key === "Enter"){
       URL = `${BASE_URL}/search/movie?${API_KEY}&language=en-US&page=1&include_adult=false&query=${search}`
@@ -104,6 +108,7 @@ const Home = () => {
             onKeyPress={(e)=>searchMovie(e)}
             onChange={(e)=> setSearch(e.target.value)}
             />
+            <button className="ptrs" onClick={()=>{logout()}}>Logout</button>
         </div>
        </form>
       </div>
