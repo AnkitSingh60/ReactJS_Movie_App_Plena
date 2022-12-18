@@ -1,184 +1,25 @@
 import React from "react";
 
-const Card = () => {
+const Card = (movie) => {
+    let {info} = movie;
+    console.log('info:', info)
+    let img_url = "https://image.tmdb.org/t/p/w500";
   return (
     <>
         <div className="movie">
       <img className="image"
-        src="https://marketplace.canva.com/EAFH4NHZv_8/1/0/1131w/canva-white-mystery-movie-poster-UfgB1AQbfvk.jpg"
-        alt="poster"
+        src={img_url+info.poster_path}
+        alt={info.title}
       />
 
       <div className="movie-details">
         <div className="box">
-          <h4 className="title">Movie~Title</h4>    
-          <h4 className="rating">Rating: 9.2</h4>
+          <h4 className="title"> {info.title.toUpperCase()}</h4>    
+          <h4 className="title"> {info.vote_average}</h4>
         </div>
         <div className="overview">
-            <h2>Overview</h2>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate commodi harum facilis doloremque eligendi laboriosam quos fugit?
-        </div>
-      </div>
-    </div>
-
-    <div className="movie">
-      <img className="image"
-        src="https://marketplace.canva.com/EAFH4NHZv_8/1/0/1131w/canva-white-mystery-movie-poster-UfgB1AQbfvk.jpg"
-        alt="poster"
-      />
-
-      <div className="movie-details">
-        <div className="box">
-          <h4 className="title">Movie~Title</h4>    
-          <h4 className="rating">Rating: 9.2</h4>
-        </div>
-        <div className="overview">
-            <h2>Overview</h2>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate commodi harum facilis doloremque eligendi laboriosam quos fugit?
-        </div>
-      </div>
-    </div><div className="movie">
-      <img className="image"
-        src="https://marketplace.canva.com/EAFH4NHZv_8/1/0/1131w/canva-white-mystery-movie-poster-UfgB1AQbfvk.jpg"
-        alt="poster"
-      />
-
-      <div className="movie-details">
-        <div className="box">
-          <h4 className="title">Movie~Title</h4>    
-          <h4 className="rating">Rating: 9.2</h4>
-        </div>
-        <div className="overview">
-            <h2>Overview</h2>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate commodi harum facilis doloremque eligendi laboriosam quos fugit?
-        </div>
-      </div>
-    </div><div className="movie">
-      <img className="image"
-        src="https://marketplace.canva.com/EAFH4NHZv_8/1/0/1131w/canva-white-mystery-movie-poster-UfgB1AQbfvk.jpg"
-        alt="poster"
-      />
-
-      <div className="movie-details">
-        <div className="box">
-          <h4 className="title">Movie~Title</h4>    
-          <h4 className="rating">Rating: 9.2</h4>
-        </div>
-        <div className="overview">
-            <h2>Overview</h2>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate commodi harum facilis doloremque eligendi laboriosam quos fugit?
-        </div>
-      </div>
-    </div><div className="movie">
-      <img className="image"
-        src="https://marketplace.canva.com/EAFH4NHZv_8/1/0/1131w/canva-white-mystery-movie-poster-UfgB1AQbfvk.jpg"
-        alt="poster"
-      />
-
-      <div className="movie-details">
-        <div className="box">
-          <h4 className="title">Movie~Title</h4>    
-          <h4 className="rating">Rating: 9.2</h4>
-        </div>
-        <div className="overview">
-            <h2>Overview</h2>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate commodi harum facilis doloremque eligendi laboriosam quos fugit?
-        </div>
-      </div>
-    </div><div className="movie">
-      <img className="image"
-        src="https://marketplace.canva.com/EAFH4NHZv_8/1/0/1131w/canva-white-mystery-movie-poster-UfgB1AQbfvk.jpg"
-        alt="poster"
-      />
-
-      <div className="movie-details">
-        <div className="box">
-          <h4 className="title">Movie~Title</h4>    
-          <h4 className="rating">Rating: 9.2</h4>
-        </div>
-        <div className="overview">
-            <h2>Overview</h2>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate commodi harum facilis doloremque eligendi laboriosam quos fugit?
-        </div>
-      </div>
-    </div><div className="movie">
-      <img className="image"
-        src="https://marketplace.canva.com/EAFH4NHZv_8/1/0/1131w/canva-white-mystery-movie-poster-UfgB1AQbfvk.jpg"
-        alt="poster"
-      />
-
-      <div className="movie-details">
-        <div className="box">
-          <h4 className="title">Movie~Title</h4>    
-          <h4 className="rating">Rating: 9.2</h4>
-        </div>
-        <div className="overview">
-            <h2>Overview</h2>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate commodi harum facilis doloremque eligendi laboriosam quos fugit?
-        </div>
-      </div>
-    </div><div className="movie">
-      <img className="image"
-        src="https://marketplace.canva.com/EAFH4NHZv_8/1/0/1131w/canva-white-mystery-movie-poster-UfgB1AQbfvk.jpg"
-        alt="poster"
-      />
-
-      <div className="movie-details">
-        <div className="box">
-          <h4 className="title">Movie~Title</h4>    
-          <h4 className="rating">Rating: 9.2</h4>
-        </div>
-        <div className="overview">
-            <h2>Overview</h2>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate commodi harum facilis doloremque eligendi laboriosam quos fugit?
-        </div>
-      </div>
-    </div><div className="movie">
-      <img className="image"
-        src="https://marketplace.canva.com/EAFH4NHZv_8/1/0/1131w/canva-white-mystery-movie-poster-UfgB1AQbfvk.jpg"
-        alt="poster"
-      />
-
-      <div className="movie-details">
-        <div className="box">
-          <h4 className="title">Movie~Title</h4>    
-          <h4 className="rating">Rating: 9.2</h4>
-        </div>
-        <div className="overview">
-            <h2>Overview</h2>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate commodi harum facilis doloremque eligendi laboriosam quos fugit?
-        </div>
-      </div>
-    </div><div className="movie">
-      <img className="image"
-        src="https://marketplace.canva.com/EAFH4NHZv_8/1/0/1131w/canva-white-mystery-movie-poster-UfgB1AQbfvk.jpg"
-        alt="poster"
-      />
-
-      <div className="movie-details">
-        <div className="box">
-          <h4 className="title">Movie~Title</h4>    
-          <h4 className="rating">Rating: 9.2</h4>
-        </div>
-        <div className="    ">
-            <h2>Overview</h2>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate commodi harum facilis doloremque eligendi laboriosam quos fugit?
-        </div>
-      </div>
-    </div><div className="movie">
-      <img className="image"
-        src="https://marketplace.canva.com/EAFH4NHZv_8/1/0/1131w/canva-white-mystery-movie-poster-UfgB1AQbfvk.jpg"
-        alt="poster"
-      />
-
-      <div className="movie-details">
-        <div className="box">
-          <h4 className="title">Movie~Title</h4>    
-          <h4 className="rating">Rating: 9.2</h4>
-        </div>
-        <div className="overview">
-            <h2>Overview</h2>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate commodi harum facilis doloremque eligendi laboriosam quos fugit?
+            <h2 className="title">Overview</h2>
+            {info.overview}
         </div>
       </div>
     </div>

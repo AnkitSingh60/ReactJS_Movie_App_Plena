@@ -130,6 +130,10 @@ nav ul li a:focus::before {
   justify-content: space-around;
 }
 
+.title {
+  color: white;
+}
+
 .overview {
   text-align: center;
 }
