@@ -6,7 +6,10 @@ const Home = () => {
   return (
     <>
     <Navbar />
+    
+    <div className="container">
     <Card />
+    </div>
     </>
   )
 }
