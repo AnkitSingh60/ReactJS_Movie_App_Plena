@@ -12,6 +12,8 @@ const Navbar = () => {
             <li> <a href="#">movie</a></li>
             <li><a href="#">movie</a></li>
             <li><a href="#">movie</a></li>
+            <li><a href="#">movie</a></li>
+            <li><a href="#">movie</a></li>
         </ul>
         </nav>
 
