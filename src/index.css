@@ -136,6 +136,7 @@ nav ul li a:focus::before {
 
 .overview {
   text-align: center;
+  font-size: larger;
 }
 
 @media (max-width: 900px) {

@@ -14,12 +14,12 @@ const Card = (movie) => {
 
       <div className="movie-details">
         <div className="box">
-          <h4 className="title"> {info.title.slice(0,18).toUpperCase()}</h4>    
+          <h4 className="title"> {info.title.slice(0,18).toUpperCase()+" . ."}</h4>    
           <h4 className="title"> {info.vote_average}</h4>
         </div>
         <div className="overview">
-            <h2 className="title">Overview</h2>
-            {info.overview}
+            <p className="title">overview</p>
+            {info.overview.slice(0,50)+"..."}
         </div>
       </div>
     </div>
