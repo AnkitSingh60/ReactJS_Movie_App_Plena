@@ -155,7 +155,7 @@ nav ul li a:focus::before {
   font-size: larger;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 765px) {
   .navbar {
     background-color: var(--secondary-color);
     height: 100px;
@@ -167,7 +167,7 @@ nav ul li a:focus::before {
   nav ul li {
     position: relative;
     bottom: 35px;
-    left: 159px;
+    left: 180px;
     text-align: center;
   }
   nav ul li a{
