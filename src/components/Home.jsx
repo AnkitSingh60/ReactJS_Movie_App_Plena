@@ -28,7 +28,6 @@ const Home = () => {
   const loadMore = () => {
     setCount(count+3);
     URL = `${BASE_URL}/discover/movie?sort_by=popularity.desc&${API_KEY}&page=${count}`
-    // console.log('URL:', URL)
     setUrl(URL)
 
   };
@@ -41,9 +40,10 @@ const Home = () => {
     if(event.key === "Enter"){
       URL = `${BASE_URL}/search/movie?${API_KEY}&language=en-US&page=1&include_adult=false&query=${search}`
       setUrl(URL);
-      setSearch(" ");
+      setSearch("");
     }
   }
+ 
   const filters = (type) => {
     if (type === "Popular") {
       URL = BASE_URL + "/discover/movie?sort_by=popularity.desc" + API_KEY;

@@ -9,7 +9,7 @@ const Login = () => {
   const handleLogin = () => {
     signInWithPopup(auth,provider).then((data)=>{
       setValue(data.user.email);
-      JSON.stringify(localStorage.setItem("email", data.user.email))
+      localStorage.setItem("email", data.user.email);
     })
   }
 
