@@ -51,7 +51,7 @@ nav ul li a::before {
   height: 3px;
   width: 0;
   transform: translateX(-50%);
-  background-color: var(--primary-color);
+  background-color: rgb(253, 21, 168);
   transition: all 0.3s ease-in-out;
 }
 nav ul li a:hover:before {
@@ -100,6 +100,7 @@ nav ul li a:focus::before {
 }
 
 .movie {
+  /* border: 1px solid red;  */
   width: 250px;
   background-color: var(--secondary-color);
   margin: 1rem;
@@ -108,6 +109,10 @@ nav ul li a:focus::before {
   box-sizing: border-box;
   overflow: hidden;
   position: relative;
+}
+.movie:hover{
+  cursor: pointer;
+  box-shadow: rgb(253, 21, 168) 5px 5px;
 }
 
 .movie-details {
@@ -143,12 +148,10 @@ nav ul li a:focus::before {
     bottom: 35px;
     left: 125px;
     text-align: center;
-    /* margin: 40px; */
-    /* padding-top: 10px; */
   }
   .search {
     position: relative;
     top: 20px;
     right: 210px;
-    }
   }
+}
