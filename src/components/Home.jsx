@@ -2,6 +2,8 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { useEffect, useState } from "react";
 import Card from "./Card";
+import { useDispatch, useSelector } from "react-redux";
+import {addProducts} from "../redux/movieSlice";
 
 let API_KEY = "&api_key=9e547eaa8b83cf89de24b0885f9b31f5";
 let BASE_URL = "https://api.themoviedb.org/3";
@@ -15,15 +17,23 @@ const Home = () => {
   const [search, setSearch] = useState("");
   const [count, setCount] = useState(2);
 
+
+
   const fetchMovies = async () => {
     try {
       let res = await fetch(urlSet);
       let result = await res.json();
       setMovieData(result.results);
+      dispatch(addProducts(result.results[0]))
+
     } catch (error) {
       console.log("error:", error);
     }
   };
+
+  const dispatch = useDispatch();
+  const allProducts = useSelector((state) => state.movieAppReducer.products[0]);
+  console.log('allProducts:', allProducts)
 
   const loadMore = () => {
     setCount(count+3);
