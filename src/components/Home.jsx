@@ -109,7 +109,7 @@ const Home = () => {
 
        
        <div className="search">
-        <button className="ptrs" onClick={()=>{loadMore()}}>Load More</button>
+        <button className="ptrs" onClick={()=>{loadMore()}}>Load</button>
           <input
             className="search_input"
             type="text"

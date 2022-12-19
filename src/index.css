@@ -188,16 +188,26 @@ nav ul li a:focus::before {
 @media (max-width: 701px) {
   .navbar {
     background-color: var(--secondary-color);
+    max-width: 385px;
     height: 100px;
+    /* border: 2px solid red; */
+  }
+  nav{
+    /* border: 2px solid rgb(54, 0, 141); */
+    width: 100%;
+    position: relative;
+    left: 140px;
+
   }
   nav ul {
     display: flex;
     flex-direction: row;
-  }
-  nav ul li {
+    width: 370x;
     position: relative;
     bottom: 35px;
-    left: 180px;
+    /* left: 235px; */
+  }
+  nav ul li {
     text-align: center;
   }
   nav ul li a{
@@ -206,10 +216,16 @@ nav ul li a:focus::before {
   .search {
     position: relative;
     top: 20px;
-    right: 170px;
-    height: 30px;
+    width: 300px;
+    right: 200px;
+    height: 40px;
+    /* border: 2px solid rgb(0, 204, 10); */
+  }
+  .search_input{
+    width: 100%;
   }
   .ptrs{
+    
     width: 90px;
     font-size: 10px;
   }
