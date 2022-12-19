@@ -44,6 +44,8 @@ const Home = () => {
 
   const logout = () => {
     localStorage.clear()
+    window.location.href="/"
+
   }
 
   const searchMovie = (event) => {
