@@ -151,6 +151,10 @@ nav ul li a:focus::before {
   margin-left: 10px;
 }
 
+.ptrs:hover{
+  cursor: pointer;
+}
+
 .overview {
   text-align: center;
   font-size: larger;
