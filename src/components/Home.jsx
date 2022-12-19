@@ -97,7 +97,7 @@ const Home = () => {
           </ul>
         </nav>
 
-       <form action="">
+       
        <div className="search">
         <button className="ptrs" onClick={()=>{loadMore()}}>Load More</button>
           <input
@@ -110,7 +110,7 @@ const Home = () => {
             />
             <button className="ptrs" onClick={()=>{logout()}}>Logout</button>
         </div>
-       </form>
+       
       </div>
 
       <div className="container">
